@@ -1,0 +1,14 @@
+﻿PARTICIPANT 1: SWAPNIL BISWAS(SYMBIOSIS INSTITUTE OF TECHNOLOGY, PUNE)
+PARTICIPANT 2: HARSHIT SINGH(SYMBIOSIS INSTITUTE OF TECHNOLOGY, PUNE)
+PARTICIPANT 3: KANISHK GUPTA(SYMBIOSIS INSTITUTE OF TECHNOLOGY, PUNE)
+
+
+AMAZON ML CHALLENGE 2023
+
+
+In this challenge we imported the train dataset which was provided to us and did a thorough analysis on the dataset in order to get proper insights about the dataset.
+We deciphered the problem statement and could be solved using regression techniques as we had to predict the PRODUCT LENGTH of the given products given in the dataset.
+We used pandas, numpy, matplotlib and sklearn to solve the problem statement.
+As a part of feature engineering we performed the preprocessing and we found the given dataset had the shape of (2249698, 6) and had many missing values. We found there were outliers present in the dataset after plotting the boxplot for the given training dataset. We dropped the columns which were less significant in the dataset so that we can obtain a more accurate prediction.
+After performing the feature engineering we chose to go with Stochastic Gradient Regression for this problem statement as it can handle big datasets with millions of products and features, and it also converges quickly due to the use of stochastic gradient descent. Furthermore, the use of the 'huber' loss function in SGDRegressor is resilient to outliers in the data, which is significant because there may be some noise in the length dimension measurements. The learning rate and maximum number of iterations can also be adjusted to optimize the model's performance.
+As per the given evaluation metrics given in the problem statement we successfully obtained a score of 97.36587239252414
